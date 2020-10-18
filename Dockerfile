@@ -1,9 +1,9 @@
 FROM		httpd:2.4
-MAINTAINER	Jose Manuel Moreno Gavira  <josem.moreno.gavira@gmail.com>
+MAINTAINER	Abdun Nur Tomal
 
-COPY files/conf/	/usr/local/apache2/conf/
-COPY files/conf.d/	/usr/local/apache2/conf.d/
+COPY files/conf/	/etc/httpd/conf/
+COPY files/conf.d/	/etc/httpd/conf.d/
 
-COPY files/extra-modules/* /usr/local/apache2/modules
+COPY files/extra-modules/* /etc/httpd/modules
 
 # entrypoint is inherited from parent container
